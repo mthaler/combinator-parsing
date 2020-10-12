@@ -5,6 +5,7 @@ import org.scalatest.funsuite.AnyFunSuite
 class SimpleParserTest extends AnyFunSuite {
 
   test("parse") {
+
     def parse(txt: String) = SimpleParser.parseAll(SimpleParser.word, txt)
 
     assert(parse("test").get === "test")
